@@ -1,10 +1,10 @@
 while(True):
+    i = 4
     while(True):
-        i = 5
+        i = 4
         n = 19
         print("\n You have altogether 5 guess \n")
         a = int(input("Guess one number and you will be guided thorougly: "))
-        # i = i - 1
         if a == n:
             print("\n WOW! You did it in your first guess \n")
             break
@@ -20,15 +20,15 @@ while(True):
                 a = int(input("Try Guessing Again: "))
                 i = i - 1 
             if a == n:
-                print("Congratulations! You have guessed it in ", 6-i ,"chance ")
+                print("Congratulations! You have guessed it in", 5-i ,"chance ")
                 break
-        if i == 0:
+        if i == 0 and a != n:
             print("GAME OVER! You have lost all your chances")       
-        Play_Again = input("\n Do you want to play again? (y/n) : ")
-        if Play_Again == "y":   
-            continue 
-        else:
-            print("\n Thank You! \n")
-            break
+        break
+    Play_Again = input("\n Do you want to play again? (y/n) : ")
+    if Play_Again == "y":   
+        continue 
+    else:
+        print("\n Thank You! \n")     
         break
     break
