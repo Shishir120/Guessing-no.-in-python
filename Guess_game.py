@@ -1,6 +1,6 @@
 while(True):
     i = 4
-    while(True):
+    while(True):   #just for fun hahahahkkahhahhah
         i = 4
         n = 19
         print("\n You have altogether 5 guess \n")
